@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Visor de Noticias Falsas</title>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <header>
+    <nav class="nav-menu">
+      
+      <div class="popover">
+        <button id="anchor_1" popovertarget="popover_1">≡</button>
+        <ul id="popover_1" popover>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="sport.html">Sport</a></li>
+          <li><a href="Finance.html">Finance</a></li>
+          <li><a href="worldNews.html">World News</a></li>
+          <li><a href="Tecnology.html">Tecnology</a></li>
+          <li><a href="Entertainment.html">Entertainment</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <div class="grid-item">
+    <button class="grid-item grid-item-boton">
+      ≡
+    </button>
+    <nav class="grid-item grid-item-nav">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+  <h1>Artículos de Noticias Falsas</h1>
+  <!-- Componente personalizado -->
+  <news-viewer></news-viewer>
+
+  <!-- Plantilla para un artículo -->
+  <template id="article-template">
+    <div class="article">
+      <a class="link" href="#">
+        <h3 class="title"></h3>
+      </a>
+        <p><strong>Autor:</strong> <span class="author"></span></p>
+        <p class="description"></p>
+      <hr>
+    </div>
+  </template>
+  <script src="main.js"></script>
+
+</body>
+</html>
